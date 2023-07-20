@@ -87,10 +87,40 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ---------------- Base Header and Footer Styles ----------------*/
+  .content-wrapper{
+    width: 90%;
+    margin: 50px 0;
+  }
+
+/* ---------------- Header and Footer Styles ----------------*/
 header{
   display: flex;
   justify-content: center;
+  padding: 15px 0;;
+}
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header-divider{
+  width: 100%;
+  height: 1px;
+  padding: 10px 0 20px 0;
+}
+
+header nav{
+  width: 60%;
 }
 
 footer{
@@ -100,20 +130,10 @@ footer{
   text-align: center;
 }
 
-/* ---------------- Header Styles ----------------*/
-header .content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+footer p{
+  margin: 0;
 }
 
-header nav ul{
-  display: flex;
-  justify-content: space-around;
-}
-
-/* ---------------- Footer Styles ----------------*/
 footer .social-icons{
   display: flex;
   justify-content: space-around;
@@ -124,6 +144,18 @@ footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .content-wrapper{
+  width: 75%;
+}
+
+footer .contact{
+  margin-bottom: 50px;
+}
+
+footer .copyright{
+  margin: 20px 0;
 }
 
 /* ---------------- Home Page Styles ----------------*/
@@ -142,6 +174,19 @@ aside{
   justify-content: center;
 }
 
+.features p{
+  margin: 0;
+}
+
+.features h2{
+  margin-bottom: 60px;
+}
+
+.features article{
+  width: 60%;
+  margin: 30px 0;
+}
+
 .features .features-items{
   display: flex;
   justify-content: center;
@@ -152,6 +197,15 @@ aside{
 .reviews{
   display: flex;
   justify-content: center;
+}
+
+.reviews h2{
+  margin-bottom: 40px;
+}
+
+.reviews h3{
+  width: 60%;
+  margin: 20px 0;
 }
 
 /* ---------------- About Page Styles ----------------*/
@@ -165,6 +219,10 @@ aside{
   justify-content: center;
 }
 
+.contact-content p{
+  margin: 0;
+}
+
 /* ---------------- FAQ Page Styles ----------------*/
 .faq{
   display: flex;
@@ -176,6 +234,15 @@ aside{
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
