@@ -280,10 +280,12 @@ input[type=button] {
   justify-content: center;
   background: url('../img/unplugged-retreat-features.jpg') center no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .features h2{
   margin-bottom: 60px;
+  text-align: left;
 }
 
 .features article{
@@ -552,6 +554,10 @@ input[type=button] {
       margin: 0;
     }
 
+    .features .features-items{
+      align-items: flex-start;
+    }
+
     .features article{
       display:  flex;
       align-items: center;
@@ -560,7 +566,7 @@ input[type=button] {
     }
 
     .features .features-items-description {
-      width: 50%;
+      width: 62%;
     }
 
     .reviews article{
