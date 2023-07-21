@@ -102,6 +102,8 @@ textarea {
    ul, 
    ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
    }
     
    a {
@@ -128,11 +130,11 @@ textarea {
    }
     
    img {
-    
+    width: 100%;
    }
     
    figure {
-    
+    margin: 0;
    }
     
    address {
@@ -161,16 +163,14 @@ header .content-wrapper{
   margin: 0;
 }
 
-header nav ul{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+header figure{
+  width: 60%;
 }
 
 .header-divider{
   width: 100%;
   height: 1px;
-  padding: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
   background-color: #3a3a3a;
 }
 
@@ -179,6 +179,12 @@ header nav{
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 footer{
@@ -193,6 +199,14 @@ footer p{
   margin: 0;
 }
 
+footer .content-wrapper{
+  width: 75%;
+}
+
+footer .contact{
+  margin-bottom: 50px;
+}
+
 footer .social-icons{
   display: flex;
   justify-content: space-around;
@@ -205,14 +219,6 @@ footer .social-icons p{
   align-items: center;
 }
 
-footer .content-wrapper{
-  width: 75%;
-}
-
-footer .contact{
-  margin-bottom: 50px;
-}
-
 footer .copyright{
   margin: 20px 0;
 }
@@ -221,6 +227,9 @@ footer .copyright{
 .hero-area{
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1{
@@ -236,17 +245,37 @@ aside{
   background-color: #527158;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .features{
   display: flex;
   justify-content: center;
-}
-
-.features .fontawesome-icon{
-  font-size: 3.75em;
-}
-
-.features p{
-  margin: 0;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2{
@@ -263,6 +292,14 @@ aside{
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features p{
+  margin: 0;
+}
+
+.features .fontawesome-icon{
+  font-size: 3.75em;
 }
 
 .reviews{
@@ -324,33 +361,6 @@ aside{
 
 .faq-content h4{
   line-height: 24px;
-}
-
-/* ---------------- Form Styles ----------------*/
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -442,6 +452,11 @@ input[type=button] {
    ========================================================================== */
 
    @media only screen and (min-width: 768px) {
+    .content-wrapper{
+      max-width: 640px;
+      margin: 100px 0;
+    }
+
     h2{
       font-size: 2.25em;
       line-height: 48px;
@@ -466,11 +481,6 @@ input[type=button] {
       font-size: .875em;
       line-height: 15.75px;
     }
-
-    .content-wrapper{
-      max-width: 640px;
-      margin: 100px 0;
-    }
   
     /* ---------------- Home Page Styles ----------------*/
     header{
@@ -480,6 +490,10 @@ input[type=button] {
     header .content-wrapper{
       width: 100%;
       justify-content: space-between;
+    }
+
+    header figure{
+      width: 30%;
     }
     
     header nav{
@@ -494,9 +508,14 @@ input[type=button] {
       display: none;
     }
 
+    .hero-area{
+      min-height: 600px;
+    }
+
     .hero-area h1{
       font-size: 3em;
       line-height: 48px;
+      margin: 0;
     }
     
     aside .content-wrapper{
@@ -528,7 +547,8 @@ input[type=button] {
       justify-content: space-between;
     }
 
-    .reviews article div{
+    .reviews article div,
+    .reviews article figure{
       width: 49%;
     }
 
@@ -587,6 +607,10 @@ input[type=button] {
   }
    
   @media only screen and (min-width: 1200px) {
+    .content-wrapper{
+      max-width: 960px;
+    }
+
     h2{
       font-size: 2.25em;
     }
@@ -610,10 +634,6 @@ input[type=button] {
     .faq p{
       font-size: 1.125em;
       line-height: 18px;
-    }
-
-    .content-wrapper{
-      max-width: 960px;
     }
   
     /* ---------------- Home Page Styles ----------------*/
