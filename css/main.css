@@ -607,6 +607,10 @@ input[type=button] {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .map figure{
+      padding-bottom: 45.5%;
+    }
     
     /* ---------------- FAQ Page Styles ----------------*/
     .faq .content-wrapper {
@@ -687,6 +691,10 @@ input[type=button] {
     .mission h2,
     .contact-section .content-wrapper h2{
       width: 90%;
+    }
+
+    .map figure{
+      padding-bottom: 37.5%;
     }
     
     /* ---------------- FAQ Page Styles ----------------*/
