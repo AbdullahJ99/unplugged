@@ -572,6 +572,7 @@ input[type=button] {
     .reviews article{
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     .reviews article div,
@@ -589,12 +590,18 @@ input[type=button] {
       align-items: center;
     }
 
+    .footer-content .contact,
+    .footer-content .social{
+      width: 30%;
+    }
+
     footer .contact{
       margin-bottom: 0;
     }
 
     footer .copyright{
       width: 100%;
+      margin: 60px 0;
     }
     
     /* ---------------- About Page Styles ----------------*/
